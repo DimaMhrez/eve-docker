@@ -6,4 +6,4 @@ app = Eve(settings=settings)
 
 serve(app, host='0.0.0.0', port=8080)
 
-app.run()
+app.run(debug=True)
