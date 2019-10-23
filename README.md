@@ -3,6 +3,6 @@ docker file for Eve REST interface to MongoDB
 
 Run the Eve REST server with:
 
-    docker pull dm-eve
-    docker run --name eve -port 8000:80 dm-eve
+    docker pull dima117/dm-eve
+    docker run -it --name eve -p 5000:5000 dima117/dm-eve:latest bash 
     
