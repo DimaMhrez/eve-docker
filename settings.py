@@ -5,3 +5,5 @@
 MONGO_HOST = 'localhost'
 MONGO_PORT = 27017
 DOMAIN = {'people': {}}
+RESOURCE_METHODS = ["GET", "POST", "DELETE"]
+ITEM_METHODS = ["GET", "PATCH", "DELETE", "PUT"]
