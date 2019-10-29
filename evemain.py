@@ -5,7 +5,7 @@ my_settings= {
  'MONGO_HOST': 'localhost',
     'MONGO_PORT': 27017,
     'MONGO_DBNAME': 'the_db_name',
-    'DOMAIN'= {'people': {}},
+    'DOMAIN': {'people': {}},
     'RESOURCE_METHODS': ["GET", "POST", "DELETE"],
     'ITEM_METHODS' : ["GET", "PATCH", "DELETE", "PUT"],
     'schema' : {
