@@ -6,9 +6,9 @@ my_settings= {
     'MONGO_PORT': 27017,
     'MONGO_DBNAME': 'the_db_name',
     'DOMAIN'= {'people': {}},
-    'RESOURCE_METHODS'= ["GET", "POST", "DELETE"],
-    'ITEM_METHODS' = ["GET", "PATCH", "DELETE", "PUT"],
-    'schema' = {
+    'RESOURCE_METHODS': ["GET", "POST", "DELETE"],
+    'ITEM_METHODS' : ["GET", "PATCH", "DELETE", "PUT"],
+    'schema' : {
     # Schema definition, based on Cerberus grammar. Check the Cerberus project
     # (https://github.com/pyeve/cerberus) for details.
     'firstname': {
