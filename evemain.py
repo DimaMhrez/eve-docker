@@ -2,9 +2,9 @@ from eve import Eve
 
 
 my_settings = {
-    'MONGO_HOST': 'localhost',
+    'MONGO_HOST': 'mongodb',
     'MONGO_PORT': 27017,
-    'MONGO_DBNAME': 'the_db_name',
+    'MONGO_DBNAME': 'the_db_name2',
     'DOMAIN': {'people': {}}
 }
 
