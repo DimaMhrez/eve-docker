@@ -4,7 +4,7 @@
 # out as they already default to a bare bones local 'mongod' instance.
 MONGO_HOST= 'mongodb'
 MONGO_PORT = 27017
-MONGO_DBNAME='dbgettest'
+MONGO_DBNAME='dbtest'
 
 # Enable reads (GET), inserts (POST) and DELETE for resources/collections
 # (if you omit this line, the API will default to ['GET'] and provide
