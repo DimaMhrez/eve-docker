@@ -2,5 +2,5 @@ from eve import Eve
 
 
 
-app = Eve(settings='my_settings.py')
+app = Eve()
 app.run(debug=True)
