@@ -1,10 +1,6 @@
-# Let's just use the local mongod instance. Edit as needed.
-
-# Please note that MONGO_HOST and MONGO_PORT could very well be left
-# out as they already default to a bare bones local 'mongod' instance.
-MONGO_HOST= 'mongodb'
+MONGO_HOST= 'localhost'
 MONGO_PORT = 27017
-MONGO_DBNAME='dbtest'
+MONGO_DBNAME='armundia1'
 
 # Enable reads (GET), inserts (POST) and DELETE for resources/collections
 # (if you omit this line, the API will default to ['GET'] and provide
@@ -20,17 +16,30 @@ ITEM_METHODS = ['GET', 'PATCH', 'DELETE']
 CACHE_CONTROL = 'max-age=200'
 CACHE_EXPIRES = 200
 
+
 # Our API will expose two resources (MongoDB collections): 'people' and works
 
-import json
+#import json
 
-jsonstring=open("my_schema.json").read()
+#jsonstring=open("my_schema.json").read()
 
 
-response =json.loads(jsonstring)
+#response =json.loads(jsonstring)
 
 
 DOMAIN = {
-    'response': response,
+    'response': {
+        'schema': {
+           'codAssetTest': {
+            'type': 'string',
+            'required': True,
+    }},
+   
+         'allow_unknown': True,
+          'item_lookup': True,
+          'additional_lookup': {
+          'url': 'regex("[\w]+")',
+           'field': 'codAssetTest',
+        } } 
    # 'works': works,
 }
